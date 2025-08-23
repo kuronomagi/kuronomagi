@@ -1,41 +1,31 @@
-# GitHub Metrics Action
 name: Metrics
 on:
-  # 手動実行とスケジュール実行のみ（push時の自動実行は無効）
-  schedule: [{cron: "0 0 * * *"}]  # 毎日午前0時（UTC）に実行
-  workflow_dispatch:  # 手動実行を許可
+  schedule: [{cron: "0 0 * * *"}]
+  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # SVGファイルをコミットするために必要
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # GitHub token（自動的に提供される、追加設定不要）
           token: ${{ secrets.METRICS_TOKEN }}
-
-          # ユーザー設定
           user: kuronomagi
           template: classic
-          base: ""  # ヘッダー情報は非表示
+          base: ""
           config_timezone: Asia/Tokyo
-
-          # セキュリティ設定
-          commits_authoring: .github@users.noreply.github.com  # コミット時のメールを非公開
-
-          # 言語統計のみ表示
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_threshold: 0%
           plugin_languages_colors: github
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
-          plugin_languages_indepth: yes  # Privateリポジトリも含める
-          plugin_languages_analysis_timeout: 15  # タイムアウトを延長
-          plugin_languages_categories: programming  # プログラミング言語のみ
-
-          # 出力設定
+          plugin_languages_indepth: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: programming
           filename: github-metrics.svg
           config_output: svg
