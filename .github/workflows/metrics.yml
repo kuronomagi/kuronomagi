@@ -11,6 +11,12 @@ jobs:
     permissions:
       contents: write
     steps:
+      # リポジトリをチェックアウト（重要：既存ファイルの取得）
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      # Metricsを生成
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -29,3 +35,6 @@ jobs:
           plugin_languages_categories: programming
           filename: github-metrics.svg
           config_output: svg
+          # 重要：上書きを許可
+          output_action: overwrite
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
