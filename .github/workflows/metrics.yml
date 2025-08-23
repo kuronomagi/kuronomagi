@@ -35,18 +35,6 @@ jobs:
           plugin_languages_indepth: yes  # Privateリポジトリも含める
           plugin_languages_analysis_timeout: 15  # タイムアウトを延長
           plugin_languages_categories: programming  # プログラミング言語のみ
-          plugin_languages_ignored: html, css  # HTML/CSSは除外（必要に応じて）
-          
-          # その他のプラグインは全て無効化
-          plugin_activity: no
-          plugin_habits: no
-          plugin_notable: no
-
-          # セキュリティのため以下は無効化
-          plugin_followup: no  # Issues/PRの詳細は非表示
-          plugin_discussions: no  # ディスカッションは非表示
-          plugin_gists: no  # Gistsは非表示
-          plugin_tweets: no  # Twitter連携は無効
 
           # 出力設定
           filename: github-metrics.svg
