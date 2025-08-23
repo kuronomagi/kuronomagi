@@ -15,7 +15,7 @@ Full-stack engineer with 6+ years of experience in web and mobile application de
 [![My Skills](https://skillicons.dev/icons?i=ruby,rails,ts,js,html,css)](https://skillicons.dev)
 
 ### Frontend & Mobile
-[![My Skills](https://skillicons.dev/icons?i=react,redux,nextjs,remix,jquery,gatsby)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,redux,nextjs,remix,jquery)](https://skillicons.dev)
 
 ### Backend & Infrastructure
 [![My Skills](https://skillicons.dev/icons?i=aws,docker,terraform,firebase,mysql,redis)](https://skillicons.dev)
