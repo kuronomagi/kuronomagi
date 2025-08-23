@@ -56,6 +56,8 @@ Full-stack engineer with 6+ years of experience in web and mobile application de
 
 <div align="center">
 
+  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kuronomagi&layout=compact&theme=dracula)
+  
   <!-- Metrics will be added here -->
   ![GitHub metrics](https://github.com/kuronomagi/kuronomagi/blob/main/github-metrics.svg)
 
