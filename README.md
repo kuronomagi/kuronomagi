@@ -26,6 +26,8 @@ Full-stack engineer with 6+ years of experience in web and mobile application de
 ## 💼 Additional Skills & Experience
 
 ### Payment Services
+![Shopify](https://img.shields.io/badge/Shopify-7AB55C?style=for-the-badge&logo=shopify&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-008CDD?style=for-the-badge&logo=stripe&logoColor=white)
 ![GMO Payment](https://img.shields.io/badge/GMO_Payment-FF6B6B?style=for-the-badge&logoColor=white)
 ![fincode](https://img.shields.io/badge/fincode-4A90E2?style=for-the-badge&logoColor=white)
 ![pay.jp](https://img.shields.io/badge/pay.jp-00B9FF?style=for-the-badge&logoColor=white)
@@ -56,10 +58,7 @@ Full-stack engineer with 6+ years of experience in web and mobile application de
 
 <div align="center">
 
-  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kuronomagi&layout=compact&theme=dracula)
-  
-  <!-- Metrics will be added here -->
-  ![GitHub metrics](https://github.com/kuronomagi/kuronomagi/blob/main/github-metrics.svg)
+  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kuronomagi&layout=compact&theme=radical)
 
 </div>
 ---
