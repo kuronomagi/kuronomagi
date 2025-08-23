@@ -1,0 +1,65 @@
+# GitHub Metrics Action
+name: Metrics
+on:
+  # 手動実行とスケジュール実行のみ（push時の自動実行は無効）
+  schedule: [{cron: "0 0 * * *"}]  # 毎日午前0時（UTC）に実行
+  workflow_dispatch:  # 手動実行を許可
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # SVGファイルをコミットするために必要
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # GitHub token（自動的に提供される、追加設定不要）
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # ユーザー設定
+          user: kuronomagi
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Tokyo
+
+          # セキュリティ設定
+          config_protect_branch: yes  # ブランチ保護を有効化
+          commits_authoring: .github@users.noreply.github.com  # コミット時のメールを非公開
+
+          # 基本的なメトリクス設定（シンプルに開始）
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 0%
+          plugin_languages_colors: github
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          plugin_languages_indepth: yes  # Privateリポジトリも含める
+
+          # アクティビティ
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_visibility: public  # Publicアクティビティのみ表示
+
+          # 習慣の分析
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_days: 14
+          plugin_habits_from: 200
+
+          # コントリビューション
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_types: commit
+
+          # セキュリティのため以下は無効化
+          plugin_followup: no  # Issues/PRの詳細は非表示
+          plugin_discussions: no  # ディスカッションは非表示
+          plugin_gists: no  # Gistsは非表示
+          plugin_tweets: no  # Twitter連携は無効
+
+          # 出力設定
+          filename: github-metrics.svg
+          config_output: svg
