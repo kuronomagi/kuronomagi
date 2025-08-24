@@ -58,7 +58,11 @@ Full-stack engineer with 6+ years of experience in web and mobile application de
 
 <div align="center">
 
-  ![Metrics](https://raw.githubusercontent.com/kuronomagi/kuronomagi/main/github-metrics.svg)
+  <!-- 3Dカレンダー -->
+  ![Calendar Metrics](https://raw.githubusercontent.com/kuronomagi/kuronomagi/main/calendar-metrics.svg)
+
+  <!-- 言語統計の詳細 -->
+  ![Language Metrics](https://raw.githubusercontent.com/kuronomagi/kuronomagi/main/language-metrics.svg)
 
 </div>
 
