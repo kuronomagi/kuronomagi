@@ -14,7 +14,7 @@ Full-stack engineer with 6+ years of experience in web and mobile application de
 ### Languages & Core Technologies
 [![My Skills](https://skillicons.dev/icons?i=ruby,rails,ts,js,html,css)](https://skillicons.dev)
 
-### Frontend & Mobile
+### Frontend Frameworks
 [![My Skills](https://skillicons.dev/icons?i=react,redux,nextjs,jquery)](https://skillicons.dev)
 
 ### Backend & Infrastructure
@@ -24,6 +24,9 @@ Full-stack engineer with 6+ years of experience in web and mobile application de
 [![My Skills](https://skillicons.dev/icons?i=git,github,gitlab,wordpress,notion)](https://skillicons.dev)
 
 ## 💼 Additional Skills & Experience
+
+### Mobile Development
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 ### Payment Services
 ![Shopify](https://img.shields.io/badge/Shopify-7AB55C?style=for-the-badge&logo=shopify&logoColor=white)
