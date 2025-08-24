@@ -37,9 +37,9 @@ Full-stack engineer with 6+ years of experience in web and mobile application de
 
 ### AWS Services
 - **Compute**: EC2, ECS, ECR, Lambda, Lightsail
-- **Storage**: S3, CloudFront
+- **Storage**: S3
 - **Database**: RDS, ElastiCache for Redis
-- **Network**: VPC, ALB, Route53, API Gateway
+- **Network**: VPC, ALB, Route53, CloudFront, API Gateway
 - **Management**: CloudWatch, IAM, Certificate Manager
 
 ### Development Tools
