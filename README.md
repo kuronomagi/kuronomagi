@@ -6,7 +6,6 @@ Full-stack engineer with 6+ years of experience in web and mobile application de
 
 - 🔧 **Current Focus:** Building web applications with Ruby on Rails, React, and Next.js
 - 📱 **Mobile Development:** Creating cross-platform apps with React Native
-- 🤖 **Learning:** Exploring AI-powered development combining Amazon Kiro and Claude Code
 - 📍 **Location:** Fukuoka, Japan
 
 ## 🛠️ Tech Stack
